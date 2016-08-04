@@ -150,6 +150,9 @@ X_poly_val = bsxfun(@rdivide, X_poly_val, sigma);
 X_poly_val = [ones(size(X_poly_val, 1), 1), X_poly_val];           % Add Ones
 
 fprintf('Normalized Training Example 1:\n');
+
+
+
 fprintf('  %f  \n', X_poly(1, :));
 
 fprintf('\nProgram paused. Press enter to continue.\n');

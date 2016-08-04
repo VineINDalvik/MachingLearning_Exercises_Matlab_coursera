@@ -15,7 +15,10 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
+P=1:p;
+P=repmat(P,size(X,1),1);
+X_poly=repmat(X,1,p);
+X_poly=X_poly.^P;
 
 
 
